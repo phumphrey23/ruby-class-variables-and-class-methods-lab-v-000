@@ -10,12 +10,12 @@ attr_reader :artist
  @@artist_count = {}
 
  def initialize(name, artist, genre)
-  @@count+=1
-  @name = name
-  @genre = genre
-  @@genre << genre
-  @artist = artist
-  @@artists << artist
+   @@count += 1
+   @@genres << genre
+   @artist = artist
+   @@artists << artist
+   @name = name
+   @genre = genre
 
  end
 
