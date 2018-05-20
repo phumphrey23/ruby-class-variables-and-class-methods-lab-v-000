@@ -2,7 +2,7 @@ class Song
 
 attr_accessor :name, :artists, :genre
 attr_reader :artist
-  
+
  @@count = 0
  @@genres = []
  @@artists = []
@@ -39,6 +39,12 @@ attr_reader :artist
     end
     @@genre_count
   end
+
+  def self.artist_count
+    @@artist.each do |artist|
+      @@artist_count[artist] = @@artist.count(artist)
+  end
+    @@artist_count
   end
 
 end
